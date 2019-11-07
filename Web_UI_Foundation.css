@@ -1,0 +1,713 @@
+/* Web UI Foundation */
+
+
+/* 此文档中的所有样式与Breeze Web Guideline中的设计准则所匹配，
+希望设计师和研发都能以此为基础元素构造页面，
+此处列出的基础样式仅供参考，如涵盖不全还请以保持视觉一致性为前提自行进行扩展，
+如有疑问请联系sunfan@xiaoshouyi.com*/
+
+
+/* Font Size & Line Height (字号和行高)(ps:此处给出的默认字重仅供参考，若要修改字重请参考字重段落)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+.H7 {
+	font-size:46px;
+	font-weight:500;
+	line-height:58px;
+}
+.H6 {
+	font-size:34px;
+	font-weight:500;
+	line-height:44px;
+}
+.H5 {
+	font-size:24px;
+	font-weight:500;
+	line-height:32px;
+}
+.H4 {
+	font-size:20px;
+	font-weight:400;
+	line-height:28px;
+}
+.H3 {
+	font-size:16px;
+	font-weight:400;
+	line-height:24px;
+}
+.H2 {
+	font-size:14px;
+	font-weight:400;
+	line-height:22px;
+}
+.H1 {
+	font-size:13px;
+	font-weight:400;
+	line-height:16px;
+}
+.H0 {
+	font-size:12px;
+	font-weight:400;
+	line-height:16px;
+}
+
+
+/* Font Weight (字重)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+.fweight_light {
+	font-weight:300;
+}
+.fweight_regular {
+	font-weight:400;
+}
+.fweight_medium {
+	font-weight:500;
+}
+.fweight_bold {
+	font-weight:700;
+
+
+/* Basic Color (基础颜色)
+(ps:如无特例，文字的颜色仅限于从黑色/白色/弱连接色/彩色中选取)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Dark (黑色) */
+
+.color_dark_01 {
+	color: #182437;
+}
+.color_dark_02 {
+	color: #444D5C;
+}
+.color_dark_03 {
+	color: #6A7280;
+}
+.color_dark_04 {
+	color: #9DA5B3;
+}
+.color_dark_05 {
+	color: #C5CBD6;
+}
+.color_dark_06 {
+	color: #DFE3EB;
+}
+.color_dark_07 {
+	color: #EDEEF2;
+}
+
+/* White (白色) */
+
+.color_white_01 {
+	color: rgba(255, 255, 255, 1);
+}
+.color_white_02 {
+	color: rgba(255, 255, 255, 0.8);
+}
+.color_white_03 {
+	color: rgba(255, 255, 255, 0.6);
+}
+.color_white_04 {
+	color: rgba(255, 255, 255, 0.4);
+}
+.color_white_05 {
+	color: rgba(255, 255, 255, 0.28);
+}
+.color_white_06 {
+	color: rgba(255, 255, 255, 0.16);
+}
+.color_white_07 {
+	color: rgba(255, 255, 255, 0.08);
+}
+
+/* Neutral (弱链接色) */
+
+.color_x_neutral_01 {
+	color: #5F7AB8;
+}
+.color_x_neutral_02 {
+	color: #5A7FD6;
+}
+
+/* Element Color (彩色) */
+
+.ecolor_blue_hex {
+	color: #4E80F5;
+}
+.ecolor_orange_hex {
+	color: #FF9B26;
+}
+.ecolor_green_hex {
+	color: #00CA8D;
+}
+.ecolor_purple_hex {
+	color: #894DEC;
+}
+.ecolor_red_hex {
+	color: #FA6470;
+}
+.ecolor_cyan_hex {
+	color: #12C4D7;
+}
+.ecolor_yellow_hex {
+	color: #FFCA1C;
+}
+
+/* Background (背景色) */
+
+.color_bg_light {
+	color: #F2F3F7;
+}
+.color_bg_lighter {
+	color: #F5F6FA;
+}
+.color_bg_lightest {
+	color: #F8F9FC;
+}
+
+
+/* 界面元素颜色(ps:每个界面元素色提供HEX和RGBA两种基础色以及对应的三种用来表示不同状态的渐变色，
+如需使用弱化的元素色，请在给出的RGBA色纸上针对透明度进行调整，通用的透明度为：0.04/0.08/0.16/0.28/0.4/0.6/0.8)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Black (黑色) */
+
+.ecolor_black_hex {
+	color: #182437;
+}
+.ecolor_black_rgba {
+	color: rgba(24, 36, 55, 1);
+}
+
+/* Blue (蓝色) */
+
+.ecolor_blue_hex {
+	color: #4E80F5;
+}
+.ecolor_blue_rgba {
+	color: rgba(78, 128, 245, 1);
+}
+.ecolor_blue_gradient {
+	background: linear-gradient(to right, #4E80F5, #699BFF);
+}
+.ecolor_blue_gradient_active {
+	background: linear-gradient(to right, #3C70D7, #5B88E0);
+}
+.ecolor_blue_gradient_deactive {
+	background: linear-gradient(to right, #7FA7F8, #99BBFF);
+}
+
+/* Orange (橙色) */
+
+.ecolor_orange_hex {
+	color: #FF9B26;
+}
+.ecolor_orange_rgba {
+	color: rgba(255, 155, 38, 1);
+}
+.ecolor_orange_gradient {
+	background: linear-gradient(to right, #FF9B26, #FFBA6E);
+}
+.ecolor_orange_gradient_active {
+	background: linear-gradient(to right, #E18821, #E0A360);
+}
+.ecolor_orange_gradient_deactive {
+	background: linear-gradient(to right, #FFBA6B, #FFCF9B);
+}
+
+/* Green (绿色) */
+
+.ecolor_green_hex {
+	color: #00CA8D;
+}
+.ecolor_green_rgba {
+	color: rgba(0, 202, 141, 1);
+}
+.ecolor_green_gradient {
+	background: linear-gradient(to right, #00CA8D, #1FDFA5);
+}
+.ecolor_green_gradient_active {
+	background: linear-gradient(to right, #00B37D, #1AC390);
+}
+.ecolor_green_gradient_deactive {
+	background: linear-gradient(to right, #53DCB4, #66E8C1);
+}
+
+/* Purple (紫色) */
+
+.ecolor_purple_hex {
+	color: #894DEC;
+}
+.ecolor_purple_rgba {
+	color: rgba(137, 77, 236, 1);
+}
+.ecolor_purple_gradient {
+	background: linear-gradient(to right, #894DEC, #A46DFF);
+}
+.ecolor_purple_gradient_active {
+	background: linear-gradient(to right, #7843D0, #905FE0);
+}
+.ecolor_purple_gradient_deactive {
+	background: linear-gradient(to right, #AE86F2, #C19BFF);
+}
+
+/* Red (红色) */
+
+.ecolor_red_hex {
+	color: #FA6470;
+}
+.ecolor_red_rgba {
+	color: rgba(250, 100, 112, 1);
+}
+.ecolor_red_gradient {
+	background: linear-gradient(to right, #FA6470, #FF7681);
+}
+.ecolor_red_gradient_active {
+	background: linear-gradient(to right, #D54B56, #E06771);
+}
+.ecolor_red_gradient_deactive {
+	background: linear-gradient(to right, #F68D96, #FFA0A9);
+}
+
+/* Cyan (青色) */
+
+.ecolor_cyan_hex {
+	color: #12C4D7;
+}
+.ecolor_cyan_rgba {
+	color: rgba(18, 196, 215, 1);
+}
+.ecolor_cyan_gradient {
+	background: linear-gradient(to right, #12C4D7, #2BCFE2);
+}
+.ecolor_cyan_gradient_active {
+	background: linear-gradient(to right, #0FACBC, #25B5C6);
+}
+.ecolor_cyan_gradient_deactive {
+	background: linear-gradient(to right, #5ED6E3, #6FDEEB);
+}
+
+/* Yellow (黄色) */
+
+.ecolor_yellow_hex {
+	color: #FFCA1C;
+}
+.ecolor_yellow_rgba {
+	color: rgba(255, 202, 28, 1);
+}
+.ecolor_yellow_gradient {
+	background: linear-gradient(to right, #FFCA1C, #FFDA62);
+}
+.ecolor_yellow_gradient_active {
+	background: linear-gradient(to right, #D8AB16, #E0BF55);
+}
+.ecolor_yellow_gradient_deactive {
+	background: linear-gradient(to right, #F9D664, #FFE593);
+}
+
+
+/* Distance & Space (间距和尺寸)
+(ps:严格遵循4像素原则，既无特殊情况，默认使用2或4的整数倍数作为元素的尺寸或元素间的间距，
+以下给出的margin和padding仅供参考，使用是优先从这些数字中选择：0/2/4/6/8/12/14/16/20/24/32/40/44/48/56/64/72/80)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Margin Top */
+
+.mt0 {
+  margin-top: 0px !important;
+}
+.mt2 {
+  margin-top: 2px;
+}
+.mt4 {
+  margin-top: 4px;
+}
+.mt8 {
+  margin-top: 8px;
+}
+.mt12 {
+  margin-top: 12px;
+}
+.mt14 {
+  margin-top: 14px;
+}
+.mt16 {
+  margin-top: 16px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt24 {
+  margin-top: 24px;
+}
+.mt32 {
+  margin-top: 32px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mt48 {
+  margin-top: 48px;
+}
+.mt56 {
+  margin-top: 56px;
+}
+.mt64 {
+  margin-top: 64px;
+}
+.mt72 {
+  margin-top: 72px;
+}
+
+/* Margin Right */
+
+.mr0 {
+  margin-right: 0px !important;
+}
+.mr2 {
+  margin-right: 2px;
+}
+.mr4 {
+  margin-right: 4px;
+}
+.mr8 {
+  margin-right: 8px;
+}
+.mr12 {
+  margin-right: 12px;
+}
+.mr14 {
+  margin-right: 14px;
+}
+.mr16 {
+  margin-right: 16px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mr24 {
+  margin-right: 24px;
+}
+.mr32 {
+  margin-right: 32px;
+}
+.mr40 {
+  margin-right: 40px;
+}
+.mr48 {
+  margin-right: 48px;
+}
+.mr56 {
+  margin-right: 56px;
+}
+.mr64 {
+  margin-right: 64px;
+}
+.mr72 {
+  margin-right: 72px;
+}
+
+/* Margin Bottom */
+
+.mb0 {
+  margin-bottom: 0px !important;
+}
+.mb2 {
+  margin-bottom: 2px;
+}
+.mb4 {
+  margin-bottom: 4px;
+}
+.mb8 {
+  margin-bottom: 8px;
+}
+.mb12 {
+  margin-bottom: 12px;
+}
+.mb14 {
+  margin-bottom: 14px;
+}
+.mb16 {
+  margin-bottom: 16px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb24 {
+  margin-bottom: 24px;
+}
+.mb32 {
+  margin-bottom: 32px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.mb48 {
+  margin-bottom: 48px;
+}
+.mb56 {
+  margin-bottom: 56px;
+}
+.mb64 {
+  margin-bottom: 64px;
+}
+.mb72 {
+  margin-bottom: 72px;
+}
+
+/* Margin Left */
+
+.ml0 {
+  margin-left: 0px !important;
+}
+.ml2 {
+  margin-left: 2px;
+}
+.ml4 {
+  margin-left: 4px;
+}
+.ml8 {
+  margin-left: 8px;
+}
+.ml12 {
+  margin-left: 12px;
+}
+.ml14 {
+  margin-left: 14px;
+}
+.ml16 {
+  margin-left: 16px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.ml24 {
+  margin-left: 24px;
+}
+.ml32 {
+  margin-left: 32px;
+}
+.ml40 {
+  margin-left: 40px;
+}
+.ml48 {
+  margin-left: 48px;
+}
+.ml56 {
+  margin-left: 56px;
+}
+.ml64 {
+  margin-left: 64px;
+}
+.ml72 {
+  margin-left: 72px;
+}
+
+
+/* Padding Top */
+
+.pt0 {
+  padding-top: 0px !important;
+}
+.pt2 {
+  padding-top: 2px;
+}
+.pt4 {
+  padding-top: 4px;
+}
+.pt8 {
+  padding-top: 8px;
+}
+.pt12 {
+  padding-top: 12px;
+}
+.pt14 {
+  padding-top: 14px;
+}
+.pt16 {
+  padding-top: 16px;
+}
+.pt20 {
+  padding-top: 20px;
+}
+.pt24 {
+  padding-top: 24px;
+}
+.pt32 {
+  padding-top: 32px;
+}
+.pt40 {
+  padding-top: 40px;
+}
+.pt48 {
+  padding-top: 48px;
+}
+.pt56 {
+  padding-top: 56px;
+}
+.pt64 {
+  padding-top: 64px;
+}
+.pt72 {
+  padding-top: 72px;
+}
+
+/* Padding Right */
+
+.pr0 {
+  padding-right: 0px !important;
+}
+.pr2 {
+  padding-right: 2px;
+}
+.pr4 {
+  padding-right: 4px;
+}
+.pr8 {
+  padding-right: 8px;
+}
+.pr12 {
+  padding-right: 12px;
+}
+.pr14 {
+  padding-right: 14px;
+}
+.pr16 {
+  padding-right: 16px;
+}
+.pr20 {
+  padding-right: 20px;
+}
+.pr24 {
+  padding-right: 24px;
+}
+.pr32 {
+  padding-right: 32px;
+}
+.pr40 {
+  padding-right: 40px;
+}
+.pr48 {
+  padding-right: 48px;
+}
+.pr56 {
+  padding-right: 56px;
+}
+.pr64 {
+  padding-right: 64px;
+}
+.pr72 {
+  padding-right: 72px;
+}
+
+/* Padding Bottom */
+
+.pb0 {
+  padding-bottom: 0px !important;
+}
+.pb2 {
+  padding-bottom: 2px;
+}
+.pb4 {
+  padding-bottom: 4px;
+}
+.pb8 {
+  padding-bottom: 8px;
+}
+.pb12 {
+  padding-bottom: 12px;
+}
+.pb14 {
+  padding-bottom: 14px;
+}
+.pb16 {
+  padding-bottom: 16px;
+}
+.pb20 {
+  padding-bottom: 20px;
+}
+.pb24 {
+  padding-bottom: 24px;
+}
+.pb32 {
+  padding-bottom: 32px;
+}
+.pb40 {
+  padding-bottom: 40px;
+}
+.pb48 {
+  padding-bottom: 48px;
+}
+.pb56 {
+  padding-bottom: 56px;
+}
+.pb64 {
+  padding-bottom: 64px;
+}
+.pb72 {
+  padding-bottom: 72px;
+}
+
+/* Padding Left */
+
+.pl0 {
+  padding-left: 0px !important;
+}
+.pl2 {
+  padding-left: 2px;
+}
+.pl4 {
+  padding-left: 4px;
+}
+.pl8 {
+  padding-left: 8px;
+}
+.pl12 {
+  padding-left: 12px;
+}
+.pl14 {
+  padding-left: 14px;
+}
+.pl16 {
+  padding-left: 16px;
+}
+.pl20 {
+  padding-left: 20px;
+}
+.pl24 {
+  padding-left: 24px;
+}
+.pl32 {
+  padding-left: 32px;
+}
+.pl40 {
+  padding-left: 40px;
+}
+.pl48 {
+  padding-left: 48px;
+}
+.pl56 {
+  padding-left: 56px;
+}
+.pl64 {
+  padding-left: 64px;
+}
+.pl72 {
+  padding-left: 72px;
+}
+
+
+/* Shadow (阴影：待补充)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Border (描边：待补充)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Radius (圆角：待补充)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+
